@@ -1,6 +1,19 @@
+@font-face {
+    font-family: 'Dijkstra';
+    src: url('Dijkstra.eot');
+    src: url('Dijkstra.eot?#iefix') format('embedded-opentype'),
+        url('Dijkstra.woff2') format('woff2'),
+        url('Dijkstra.woff') format('woff'),
+        url('Dijkstra.ttf') format('truetype'),
+        url('Dijkstra.svg#Dijkstra') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 .main {
     display: flex;
@@ -11,7 +24,9 @@ body {
 }
 .main img {
     position: fixed;
+    top: -20px;
     height: 100%;
+    max-width: 87vw;
     object-fit: scale-down;
 }
 .animateImg1 {
@@ -29,4 +44,21 @@ body {
 @keyframes animate2 {
     from { 	transform: rotate(0deg) translateX(-3px); }
 	to   {  transform: rotate(-360deg) translateX(-3px) rotate(360deg); }
+}
+
+.footer {
+    position: fixed;
+    padding: 20px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.footer {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #fff;
+    font-family: 'Dijkstra';
 }
